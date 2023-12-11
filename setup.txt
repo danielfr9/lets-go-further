@@ -1,0 +1,4 @@
+- Install Postgress
+- Create database and role with the help of the init.sql file
+- Optional: Install cosmtrek/air binary [go install github.com/cosmtrek/air@latest]
+- Install golang-migrate on PC (https://github.com/golang-migrate/migrate/tree/master/cmd/migrate)
