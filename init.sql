@@ -1,5 +1,8 @@
 CREATE DATABASE greenlight;
 
+-- Move into the database
+\c greenlight;
+
 CREATE ROLE greenlight WITH LOGIN PASSWORD 'a$$word';
 
 -- Grant CREATE privilege on the public schema
