@@ -69,9 +69,10 @@ func (l *Logger) print(level Level, message string, properties map[string]string
 		Properties map[string]string `json:"properties,omitempty"`
 		Trace      string            `json:"trace,omitempty"`
 	}{
-		Level:   level.String(),
-		Time:    time.Now().UTC().Format(time.RFC3339),
-		Message: message,
+		Level:      level.String(),
+		Time:       time.Now().UTC().Format(time.RFC3339),
+		Message:    message,
+		Properties: properties,
 	}
 
 	if level >= LevelError {
