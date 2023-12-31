@@ -9,6 +9,10 @@
 *.dylib
 tmp/
 
+.envrc
+vendor/
+bin/
+
 # Test binary, built with `go test -c`
 *.test
 
