@@ -49,11 +49,11 @@ func (l *Logger) PrintInfo(message string, properties map[string]string) {
 }
 
 func (l *Logger) PrintError(err error, properties map[string]string) {
-	l.print(LevelInfo, err.Error(), properties)
+	l.print(LevelError, err.Error(), properties)
 }
 
 func (l *Logger) PrintFatal(err error, properties map[string]string) {
-	l.print(LevelInfo, err.Error(), properties)
+	l.print(LevelFatal, err.Error(), properties)
 	os.Exit(1)
 }
 
